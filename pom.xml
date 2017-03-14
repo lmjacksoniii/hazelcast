@@ -94,6 +94,7 @@
         <sonar.language>java</sonar.language>
         <sonar.verbose>true</sonar.verbose>
 
+	<hazelcast-kubernetes.version>1.0.0</hazelcast-kubernetes.version>
         <jsr107.api.version>1.0.0</jsr107.api.version>
         <CacheManagerImpl>com.hazelcast.cache.HazelcastCacheManager</CacheManagerImpl>
         <CacheImpl>com.hazelcast.cache.ICache</CacheImpl>
@@ -957,6 +958,11 @@
     </repositories>
 
     <dependencies>
+	<dependency>
+            <groupId>com.hazelcast</groupId>
+             <artifactId>hazelcast-kubernetes</artifactId>
+             <version>${hazelcast-kubernetes.version}</version>
+        </dependency>
         <dependency>
             <groupId>javax.cache</groupId>
             <artifactId>cache-api</artifactId>
